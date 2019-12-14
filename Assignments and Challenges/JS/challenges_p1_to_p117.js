@@ -26,4 +26,3 @@ function not_a_number() {
     document.getElementById("NaN_test_2").innerHTML = isNaN(4);
     document.getElementById("NaN_test_3").innerHTML = isNaN("sky");
 }
-
