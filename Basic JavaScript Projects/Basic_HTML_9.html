@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="JS/Basic_JavaScript_9.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/Basic_CSS_1.css">
+</head>
+
+<body>
+
+    <!-- step 153 -->
+    <div>
+        <p>How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value="" />
+        <button onclick="countdown()">Click here</button>
+        <p id="timer"></p>
+        <br><br><br>
+    </div>
+
+    <!-- step 155 -->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+
+        <!-- Images and caption/number text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 /3 </div>
+            <img src="images/isle_of_skye.jpg" style="width:100%">
+            <div class="text">Isle of Skye, Scotland</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 /3 </div>
+            <img src="images/nervion_river_falls.jpg" style="width:100%">
+            <div class="text">Nervion River Falls, Spain</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 /3 </div>
+            <img src="images/yangbulakang_palace.jpg" style="width:100%">
+            <div class="text">Yangbulakang Palace, Tibet</div>
+        </div>
+
+        <!-- Buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- Dots -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>    
+    </div>          
+
+
+
+</body>
+</html>
