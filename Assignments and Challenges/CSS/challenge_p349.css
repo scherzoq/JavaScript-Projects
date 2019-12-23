@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#c1, #c3, #c5 {
+    height: 500px;
+    background-color: green;
+}
+
+#c2, #c4 {
+    height: 500px;
+    background-color: red;
+}

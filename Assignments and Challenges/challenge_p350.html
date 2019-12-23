@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="CSS/challenge_p350.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+   <div id="slideshow">
+       <div>
+           <img src="challenge_p350_1.jpg" height=500 width=800>
+       </div>
+       <div>
+            <img src="challenge_p350_2.jpg" height=500 width=800>
+        </div>
+        <div>
+            <img src="challenge_p350_3.jpg" height=500 width=800>
+        </div>
+    </div>
+    <script>
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function() {
+            $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow')
+        }, 3000);
+    </script>
+   
+</body>
+</html>

@@ -5,11 +5,20 @@
     <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="stylesheet" type = "text/css" href="Pizza_CSS/Pizza.css">   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <!-- added fade in (challenge, p. 344) -->
+    <script>document.body.className += ' fade-out';</script>
+    <script>
+        $(function() {
+            $('body').removeClass('fade-out');
+        });
+    </script>
     <div id="menuBG">
-        <h1 style="margin:0 0px 0 100px;">Pizza Drill Tutorial</h1>
+        <!-- added vw font size (challenge, p. 343) -->
+        <h1 style="margin:0 0px 0 50px; font-size:4vw;">Pizza Drill Tutorial</h1>
         <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
         <form id="frmMenu">
             <div class="menu left">
